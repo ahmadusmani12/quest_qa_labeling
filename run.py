@@ -46,7 +46,7 @@ experiment.register_directory("checkpoints")
 experiment.register_directory("predictions")
 
 
-def seed_everything(seed: int):
+def seed_everything(seed=1234):
     random.seed(seed)
     os.environ["PYTHONHASHSEED"] = str(seed)
     np.random.seed(seed)
